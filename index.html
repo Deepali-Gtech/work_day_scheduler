@@ -22,95 +22,102 @@
         #scheduler {
             text-align: center;
         }
+
+        #calendar {
+            text-align: center;
+        }
     </style>
 
     <div id="calendar" class="container">
         <div class="row">
             <div class="col-sm-1">
-                <hr>9:00 AM <hr>
+                <hr>9:00 AM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="9amtext" name="9amtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="9ambutton" class="col-sm-1" type="button" data-text-id="9amtext">Save</button>
+            <textarea class="col-sm-10" id="9text" name="9text" rows="4" cols="50"
+                ></textarea>
+            <button id="9button" class="col-sm-1" type="button" data-text-id="9text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>10:00 AM <hr>
+                <hr>10:00 AM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="10amtext" name="10amtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="10ambutton" class="col-sm-1" type="button" data-text-id="10amtext">Save</button>
+            <textarea class="col-sm-10" id="10text" name="10text" rows="4" cols="50"></textarea>
+            <button id="10button" class="col-sm-1" type="button" data-text-id="10text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>11:00 AM <hr>
+                <hr>11:00 AM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="11amtext" name="11amtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="11ambutton" class="col-sm-1" type="button" data-text-id="11amtext">Save</button>
+            <textarea class="col-sm-10" id="11text" name="11text" rows="4" cols="50"></textarea>
+            <button id="11button" class="col-sm-1" type="button" data-text-id="11text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>12:00 AM <hr>
+                <hr>12:00 AM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="12amtext" name="12amtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="12ambutton" class="col-sm-1" type="button" data-text-id="12amtext">Save</button>
+            <textarea class="col-sm-10" id="12text" name="12text" rows="4" cols="50"></textarea>
+            <button id="12button" class="col-sm-1" type="button" data-text-id="12text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>1:00 PM <hr>
+                <hr>1:00 PM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="1pmtext" name="1pmtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="1pmbutton" class="col-sm-1" type="button" data-text-id="1pmtext">Save</button>
+            <textarea class="col-sm-10" id="13text" name="13text" rows="4" cols="50"
+                ></textarea>
+            <button id="13button" class="col-sm-1" type="button" data-text-id="13text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>2:00 PM <hr>
+                <hr>2:00 PM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="2pmtext" name="2pmtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="2pmbutton" class="col-sm-1" type="button" data-text-id="2pmtext">Save</button>
+            <textarea class="col-sm-10" id="14text" name="14text" rows="4" cols="50"
+></textarea>
+            <button id="14button" class="col-sm-1" type="button" data-text-id="14text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>3:00 PM <hr>
+                <hr>3:00 PM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="3pmtext" name="3pmtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="3pmbutton" class="col-sm-1" type="button" data-text-id="3pmtext">Save</button>
+            <textarea class="col-sm-10" id="15text" name="15text" rows="4" cols="50"></textarea>
+            <button id="15button" class="col-sm-1" type="button" data-text-id="15text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>4:00 PM <hr>
+                <hr>4:00 PM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="4pmtext" name="4pmtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="4pmbutton" class="col-sm-1" type="button" data-text-id="4pmtext">Save</button>
+            <textarea class="col-sm-10" id="16text" name="16text" rows="4" cols="50"></textarea>
+            <button id="16button" class="col-sm-1" type="button" data-text-id="16text">Save</button>
         </div>
         <div class="row">
             <div class="col-sm-1">
-                <hr>5:00 PM <hr>
+                <hr>5:00 PM
+                <hr>
             </div>
-            <textarea class="col-sm-10" id="5pmtext" name="5pmtext" rows="4" cols="50"
-                style="background-color:orange;"></textarea>
-            <button id="5pmbutton" class="col-sm-1" type="button" data-text-id="5pmtext">Save</button>
+            <textarea class="col-sm-10" id="17text" name="17text" rows="4" cols="50"></textarea>
+            <button id="17button" class="col-sm-1" type="button" data-text-id="17text">Save</button>
         </div>
     </div>
 
 
     <script type="text/javascript">
         $(document).ready(function () {
-            $("#9amtext").text(localStorage.getItem("9amtext"));
-            $("#10amtext").text(localStorage.getItem("10amtext"));
-            $("#11amtext").text(localStorage.getItem("11amtext"));
-            $("#12amtext").text(localStorage.getItem("12amtext"));
-            $("#1pmtext").text(localStorage.getItem("1pmtext"));
-            $("#2pmtext").text(localStorage.getItem("2pmtext"));
-            $("#3pmtext").text(localStorage.getItem("3pmtext"));
-            $("#4pmtext").text(localStorage.getItem("4pmtext"));
-            $("#5pmtext").text(localStorage.getItem("5pmtext"));
+            $("#9text").text(localStorage.getItem("9text"));
+            $("#10text").text(localStorage.getItem("10text"));
+            $("#11text").text(localStorage.getItem("11text"));
+            $("#12text").text(localStorage.getItem("12text"));
+            $("#13text").text(localStorage.getItem("13text"));
+            $("#14text").text(localStorage.getItem("14text"));
+            $("#15text").text(localStorage.getItem("15text"));
+            $("#16text").text(localStorage.getItem("16text"));
+            $("#17text").text(localStorage.getItem("17text"));
 
         });
 
@@ -126,6 +133,34 @@
         // jQuery alternative to: document.querySelector("#scheduler").appendChild(newDiv);
         $("#scheduler").append(headingDiv);
 
+        rows = document.getElementsByClassName("col-sm-10");
+            let currentHour = parseInt(moment().format('H'));
+
+            Array.from(rows).forEach(row => {
+                let
+                    rowIdString = row.id,
+                    rowHour;
+                if (rowIdString) {
+                    rowHour = parseInt(rowIdString);
+                }
+                if (rowHour) {
+                    // Compares row id to current hour and sets color accordingly
+                    if (currentHour === rowHour) {
+                        setColor(row, "red");
+                    } else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
+                        setColor(row, "green");
+                    } else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
+                        setColor(row, "lightgrey");
+                    } else {
+                        setColor(row, "white");
+                    }
+                }
+            });
+
+            function setColor(element, color) {
+                element.style.backgroundColor = color;
+            }
+
         var todayDateDiv = $("<div>");
         todayDateDiv.html("<b>" + moment().format("dddd, MMMM Do") + "</b>");
         $("#scheduler").append(todayDateDiv);
@@ -137,14 +172,9 @@
                 var textValue = document.getElementById(textElementId).value;
                 localStorage.setItem(textElementId, textValue);
             }
+             
+
         });
-
-        $
-
-
-
-
-
 
     </script>
 
