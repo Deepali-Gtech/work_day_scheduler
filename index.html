@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Work Day Scheduler</title>
+
+    <!-- Added link to the jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+    <script src="jquery-layoutday.js"></script>
+
+    <link rel="stylesheet" href="jquery-layoutday.css">
+
+
+
+
+</head>
+
+<body>
+
+    <div id="scheduler"></div>
+
+
+    <!-- Here we're adding a bit of CSS -->
+    <style>
+        #scheduler {
+            text-align: center;
+        }
+    
+    </style>
+
+    <div id="calendar"></div>
+    <div class="time">
+        <ul>
+            <li>9:00 <span>AM</span></li>
+            <li>10:00 <span>AM</span></li>
+            <li>11:00 <span>AM</span></li>
+            <li>12:00 <span>PM</span></li>
+            <li>1:00 <span>PM</span></li>
+            <li>2:00 <span>PM</span></li>
+            <li>3:00 <span>PM</span></li>
+            <li>4:00 <span>PM</span></li>
+            <li>5:00 <span>PM</span></li>
+
+        </ul>
+    </div>
+
+
+    <script type="text/javascript">
+
+        $("#scheduler").html("<h1>Work Day Scheduler</h1>");
+
+
+        // jQuery alternative to: var newDiv = document.createElement("div");
+        var headingDiv = $("<div>");
+
+        // jQuery alternative to: newDiv.textContent = "A pleasure to meet you!";
+        headingDiv.text("A simple calendar app for scheduling your day");
+
+        // jQuery alternative to: document.querySelector("#scheduler").appendChild(newDiv);
+        $("#scheduler").append(headingDiv);
+
+        var todayDateDiv = $("<div>");
+        todayDateDiv.html("<b>" + moment().format("dddd, MMMM Do") + "</b>");
+        $("#scheduler").append(todayDateDiv);
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
