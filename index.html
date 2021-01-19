@@ -21,10 +21,16 @@
     <style>
         #scheduler {
             text-align: center;
+            background-color: rgb(241, 236, 241);
         }
+
 
         #calendar {
             text-align: center;
+            background-color: rgb(241, 236, 241);        }
+
+        button {
+            background-color: blue;
         }
     </style>
 
@@ -147,13 +153,12 @@
                     // Compares row id to current hour and sets color accordingly
                     if (currentHour === rowHour) {
                         setColor(row, "red");
-                    } else if ((currentHour < rowHour) && (currentHour > rowHour - 6)) {
+                    } else if ((currentHour < rowHour) && (currentHour > rowHour - 9)) {
                         setColor(row, "green");
-                    } else if ((currentHour > rowHour) && (currentHour < rowHour + 6)) {
+                    } else if ((currentHour > rowHour) && (currentHour < rowHour + 9)) {
                         setColor(row, "lightgrey");
-                    } else {
-                        setColor(row, "white");
-                    }
+                    } 
+                    
                 }
             });
 
