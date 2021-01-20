@@ -4,7 +4,7 @@ This app will run in the browser and feature dynamically updated HTML and CSS po
 
 
 # Deployment
-Link to the deployed website: 
+Link to the deployed website: https://deepali-gtech.github.io/work_day_scheduler/
 
 
 Below is screen shorts for the website
