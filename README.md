@@ -11,3 +11,14 @@ Below is screen shorts for the website
 
 ### Opening Screen : 
 ![Website](./work_day.png)
+## Technologies used
+* Bootstrap
+* jQuery
+* CSS
+* Ajax
+
+## License 
+* MIT
+
+### Contact Detail 
+Email-Id : deeapaligarg.chd@gmail.com
